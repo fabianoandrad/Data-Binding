@@ -1,0 +1,111 @@
+<!-- <section>
+  <article>
+    <h3>Interpolation / Interolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    <P
+      >Curso Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</P
+    >
+  </article>
+
+  <article>
+    <h3>Property binding</h3>
+    <img [src]="urlImage" />
+  </article>
+
+  <article>
+    <h3>Class e Style Binding</h3>
+
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="(0)">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Infomação</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br /><br />
+
+      <div class="alert {{ classe.value }}">
+        Muda o tipo de alerta de acordo com a opção selecionada
+      </div>
+
+      <div
+        class="alert alert-success"
+        role="alert"
+        [style.display]="classe.value == 'alert-success' ? 'block' : 'none'"
+      >
+        Sucesso
+      </div>
+
+      <div
+        class="alert alert-info"
+        role="alert"
+        [style.display]="classe.value == 'alert-info' ? 'block' : 'none'"
+      >
+        Infomação
+      </div>
+
+      <div
+        class="alert alert-warning"
+        role="alert"
+        [style.display]="classe.value == 'alert-warning' ? 'block' : 'none'"
+      >
+        Alerta
+      </div>
+
+      <div
+        class="alert alert-danger"
+        role="alert"
+        [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+      >
+        Erro
+      </div>
+    </div>
+  </article>
+</section> -->
+
+<!-- <section>
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">
+        Me clique
+      </button>
+
+      <br /><br />
+
+      aqui no input foi usado algumas forma de escutar o evento:
+       $event mais poderia ter sido usado a variavel criada o que muda é como vai ser no metodo onKeyup
+      na criação da classe highlight foi usado property binding e que no caso não precisa usar as {{}}
+      <input
+        #campoInput
+        type="text"
+        (keyup)="onKeyup($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+      />
+
+      <p>Valor atual: {{ valorAtual }}</p>
+      <p>Valor salvo: {{ valorSalvo }}</p>
+      <br />
+      <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver"
+      >
+        Passe o mouse sobre mim
+      </span>
+    </div>
+  </article>
+</section>
+
+<app-meu-form></app-meu-form> -->
+
+<section class="input-output-properties">
+
+  <article>
+    <h3>Input/Output Properties</h3>
+  </article>
+</section>

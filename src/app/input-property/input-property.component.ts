@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InputPropertyComponent implements OnInit {
 
-  @Input('nome') nomeCurso: string = ''; // Expoe a property "nome" para o selector: 'app-curso'
+  @Input('nome') nomeCurso: string = ''; // Expoe a property "nome" para o selector: 'app-curso' e com isso seu valor pode ser alterada por outro valor desta propriedade do component
 
   constructor() { }
 
